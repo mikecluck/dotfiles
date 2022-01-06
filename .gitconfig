@@ -1,0 +1,48 @@
+[init]
+  defaultBranch = main
+
+[pull]
+rebase = true
+
+[author]
+name = Mike
+email = mcluck90@gmail.com
+
+[filter "lfs"]
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true
+
+[alias]
+add-all = !git add $(git root)
+amend = commit --amend
+br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+cm = commit -m
+co = checkout
+cob = checkout -b
+del = branch -D
+ec = config --global -e
+lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+mob-push = push --no-verify --force
+rename = branch -m
+root = rev-parse --show-toplevel
+rm-remote-branch = push origin --delete
+st = status --short
+sw = switch
+undo = reset HEAD~1 --mixed
+unstage = reset HEAD
+wip = "!f() {\n\
+  git add .\n\
+  if [[ $(git show --pretty=format:%s -s HEAD) = \"WIP\" ]]; then\n\
+    git amend --no-edit --no-verify\n\
+  else\n\
+    git commit -m \"WIP\" --no-verify\n\
+  fi\n\
+};\n\
+f"
+x = restore
+
+[user]
+	email = mcluck90@gmail.com
+	name = Mike
