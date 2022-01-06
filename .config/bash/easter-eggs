@@ -1,0 +1,5 @@
+# vim: set syntax=bash
+# Show ctree during December
+if [[ -f /usr/bin/ctree && $(date +"%m") = "12" ]]; then
+  ctree
+fi

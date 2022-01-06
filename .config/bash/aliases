@@ -1,0 +1,23 @@
+# vim: set syntax=bash
+# Used for dotfiles repo
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias vim='/usr/bin/nvim'
+
+alias bat='/usr/bin/batcat'
+alias clip='xclip -selection c'
+
+alias ls='exa'
+alias l='exa --icons -1'
+alias la='exa -al --icons'
+alias ll='exa -la'
+
+alias trim="rg \"^\s*(.*)\s*$\" -r '\$1'"
+
+alias notes='code ~/code/memex'
+
+alias gba='retroarch -L ~/.var/app/org.libretro.RetroArch/config/retroarch/cores/mgba_libretro.so'
+alias sega='retroarch -L ~/.var/app/org.libretro.RetroArch/config/retroarch/cores/genesis_plus_gx_libretro.so'
+
+# Hack to ensure that pywal correctly sets the theme after running ranger
+alias ranger='ranger && cat ~/.cache/wal/sequences'
