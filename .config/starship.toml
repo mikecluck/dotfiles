@@ -1,0 +1,11 @@
+[character]
+success_symbol="[ﬦ](bold green)"
+error_symbol="[ﬦ](bold red)"
+
+[hostname]
+style="bold green"
+
+[username]
+style_user="bold bright-yellow"
+format="[$user]($style) @ "
+
