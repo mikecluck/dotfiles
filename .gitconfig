@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = MCluck90@gmail.com
+	name = Mike Cluck
+[alias]
+  st = status -s
