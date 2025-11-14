@@ -6,5 +6,7 @@
 [alias]
   cm = commit -m
   co = checkout
+  cob = checkout -b
   ec = config --global --edit
   st = status -s
+  sw = switch
