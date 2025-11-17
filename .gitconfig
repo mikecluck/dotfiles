@@ -4,6 +4,7 @@
 	email = MCluck90@gmail.com
 	name = Mike Cluck
 [alias]
+  add-all = "!git -C \"$(git rev-parse --show-toplevel)\" add ."
   amend = commit --amend
   br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
   cm = commit -m
@@ -15,4 +16,4 @@
   st = status -s
   sw = switch
   undo = reset HEAD~1 --mixed
-  wip = "!f() { git add . && if [ \"$(git show --pretty=format:%s -s HEAD)\" = \"WIP\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"WIP\" --no-verify; fi; }; f"
+  wip = "!f() { git add-all && if [ \"$(git show --pretty=format:%s -s HEAD)\" = \"WIP\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"WIP\" --no-verify; fi; }; f"
