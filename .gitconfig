@@ -15,3 +15,4 @@
   st = status -s
   sw = switch
   undo = reset HEAD~1 --mixed
+  wip = "!f() { git add . && if [ \"$(git show --pretty=format:%s -s HEAD)\" = \"WIP\" ]; then git commit --amend --no-edit --no-verify; else git commit -m \"WIP\" --no-verify; fi; }; f"
