@@ -5,9 +5,13 @@
 	name = Mike Cluck
 [alias]
   amend = commit --amend
+  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
   cm = commit -m
   co = checkout
   cob = checkout -b
   ec = config --global --edit
+  lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rename = branch -m
   st = status -s
   sw = switch
+  undo = reset HEAD~1 --mixed
