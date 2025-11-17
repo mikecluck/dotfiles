@@ -4,6 +4,7 @@
 	email = MCluck90@gmail.com
 	name = Mike Cluck
 [alias]
+  amend = commit --amend
   cm = commit -m
   co = checkout
   cob = checkout -b
