@@ -1,0 +1,71 @@
+format = """
+${custom.holiday}\
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$package\
+$c\
+$cmake\
+$cobol\
+$lua\
+$nodejs\
+$rust\
+$memory_usage\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$netns\
+$shell\
+$character"""
+
+[custom.holiday]
+command = '''
+case $(date +%m) in
+    01)
+        echo -n "🎂"  # Birthday
+        ;;
+    02)
+        echo -n "❤️"  # Valentine's Day
+        ;;
+    03)
+        echo -n "☘️"  # St. Patrick's Day
+        ;;
+    04)
+        echo -n "🐰"  # Easter
+        ;;
+    05)
+        echo -n "🇺🇸"  # Memorial Day
+        ;;
+    07)
+        echo -n "🎆"  # Independence Day
+        ;;
+    09)
+        echo -n "🍂"  # Fall/Autumn
+        ;;
+    10)
+        echo -n "🎃"  # Halloween
+        ;;
+    11)
+        echo -n "🦃"  # Thanksgiving
+        ;;
+    12)
+        echo -n "🎄"  # Christmas
+        ;;
+esac
+'''
+when = true
