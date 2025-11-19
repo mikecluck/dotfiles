@@ -93,8 +93,10 @@ fg = "Blue"
 fg = "Red"
 
 [projects_style]
+fg = "Yellow"
 
 [contexts_style]
+fg = "Green"
 
 [hashtags_style]
 
