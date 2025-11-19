@@ -5,3 +5,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias vim=nvim
 export EDITOR=nvim
 alias bat='batcat'
+alias todo='todotxt-tui'
