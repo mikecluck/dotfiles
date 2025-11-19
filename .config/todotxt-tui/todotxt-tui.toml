@@ -1,6 +1,29 @@
 init_widget = "List"
 window_title = "todo"
-layout = "[  Direction: Horizontal,  Size: 50%,  [    List: 80%, Preview: 20%,  ],  [    Direction: Vertical,    Done: 60%,    [      Contexts: 50%,      Projects: 50%,    ],  ],]"
+#layout = """
+#[
+#  Direction: Horizontal,
+#  Size: 50%,
+#  [
+#    List: 80%,
+#    Preview: 20%
+#  ],
+#  [
+#    Direction: Vertical,
+#    Done: 60%,
+#    [
+#      Contexts: 50%,
+#      Projects: 50%,
+#    ],
+#  ],
+#]
+#"""
+layout = """
+[
+  List: 80%,
+  Preview: 20%
+]
+"""
 paste_behavior = "Insert"
 enable_mouse = true
 use_done = false
