@@ -25,6 +25,9 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 # Install todo list manager
 cargo install todotxt-tui
 
+# Assortment of dev tools (ut)
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ksdme/ut/releases/latest/download/ut-installer.sh | sh
+
 echo "Next steps:"
 echo "1. Install JetBrainsMono Nerd Font (https://www.nerdfonts.com/font-downloads)"
 echo "  - Copy all ttf files to ~/.fonts/"
