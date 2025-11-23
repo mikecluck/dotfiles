@@ -7,4 +7,10 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
+  
+  if [ -d "$HOME/.config/bash/completions" ]; then
+    for script in "$HOME/.config/bash/completions"/*.sh; do
+      [ -f "$script" ] && . "$script" || echo "$script is not executable"
+    done
+  fi
 fi
