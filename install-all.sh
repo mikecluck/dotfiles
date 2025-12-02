@@ -31,3 +31,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ksdme/ut/releases/lates
 echo "Next steps:"
 echo "1. Install JetBrainsMono Nerd Font (https://www.nerdfonts.com/font-downloads)"
 echo "  - Copy all ttf files to ~/.fonts/"
+
+echo ""
+echo "Optional:"
+echo "- TUI internet radio player: https://github.com/deep5050/radio-active"
