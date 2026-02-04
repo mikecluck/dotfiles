@@ -25,6 +25,9 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 # Install todo list manager
 cargo install todotxt-tui
 
+# Install a better ls
+cargo install eza
+
 # Install [yazi](https://yazi-rs.github.io/) as a file manager
 cargo install --force yazi-build
 
